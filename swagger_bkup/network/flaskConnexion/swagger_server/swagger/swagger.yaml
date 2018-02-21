@@ -1,0 +1,43 @@
+---
+swagger: "2.0"
+info:
+  description: "A simple service to get network interface card info as an example\
+    \ of using swagger -2.0 specification and codegen"
+  version: "0.0.1"
+  title: "network interface card info"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    name: "Cloudmesh REST Service Example"
+  license:
+    name: "Apache"
+host: "localhost:8080"
+basePath: "/api"
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /network:
+    get:
+      description: "Returns network interface card info information of the hosting\
+        \ server"
+      operationId: "network_get"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "network interface card info"
+          schema:
+            $ref: "#/definitions/network"
+      x-swagger-router-controller: "swagger_server.controllers.default_controller"
+definitions:
+  network:
+    type: "object"
+    properties:
+      model:
+        type: "string"
+    example:
+      model: "model"
