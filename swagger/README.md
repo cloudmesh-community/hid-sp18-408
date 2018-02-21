@@ -18,7 +18,7 @@ You can download the code from the repository and start playing around.
 ### Follow the below steps
 
 * Clone the repository
-* Navigate to "flaskConnexion" directory 
+* Navigate to "network/flaskConnexion" directory 
 * start the service by executing the command "python -m swagger_server"
 
 You will see something like this 

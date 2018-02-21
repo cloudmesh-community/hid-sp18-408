@@ -5,7 +5,7 @@ from __future__ import absolute_import
 from flask import json
 from six import BytesIO
 
-from swagger_server.models.network import NETWORK  # noqa: E501
+from swagger_server.models.network import Network  # noqa: E501
 from swagger_server.test import BaseTestCase
 
 

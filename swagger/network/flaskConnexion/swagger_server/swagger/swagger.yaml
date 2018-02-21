@@ -1,10 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  description: "A simple service to get cpuinfo as an example of using swagger -2.0\
-    \ specification and codegen"
+  description: "A simple service to get network interface card info as an example\
+    \ of using swagger -2.0 specification and codegen"
   version: "0.0.1"
-  title: "cpuinfo"
+  title: "network interface card info"
   termsOfService: "http://swagger.io/terms/"
   contact:
     name: "Cloudmesh REST Service Example"
@@ -21,24 +21,23 @@ produces:
 paths:
   /network:
     get:
-      description: "Returns network information of the hosting server"
+      description: "Returns network interface card info information of the hosting\
+        \ server"
       operationId: "network_get"
       produces:
       - "application/json"
       parameters: []
       responses:
         200:
-          description: "Network info"
+          description: "network interface card info"
           schema:
-            $ref: "#/definitions/NETWORK"
+            $ref: "#/definitions/network"
       x-swagger-router-controller: "swagger_server.controllers.default_controller"
 definitions:
-  NETWORK:
+  network:
     type: "object"
-    required:
-    - "Network"
     properties:
-      Network:
+      model:
         type: "string"
     example:
-      Network: "Network"
+      model: "model"
