@@ -1,9 +1,0 @@
-
-abstract -  https://www.ibm.com/us-en/marketplace/big-replicate/resources#product-header-top
-intro - https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=IMS14524USEN&
-Architecture - https://medium.com/@ostechtalks/big-replicate-data-replication-for-hadoop-18ca79139900
-features - https://www.wandisco.com/product/ibm-big-replicate
-
-
-http://www.ibmbigdatahub.com/blog/ibm-big-replicate-complete-resilience-through-active-active-replication
-
