@@ -1,3 +1,4 @@
+
 FROM ubuntu:16.04
 MAINTAINER Manoj Joshi <manjoshi@iu.edu>
 
@@ -7,6 +8,7 @@ RUN apt-get update -q && apt-get install -qy \
     python-pip \
     git-core \
     wget \
+    pandoc \
     default-jre \
     libssl-dev -y
 
