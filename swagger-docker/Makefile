@@ -52,10 +52,8 @@ service: dest
 	rm *.jar
 
 	cp -r *.py $(DESTDIR)/swagger_server/controllers
-	#cd $(NETWORKDIR) && pip install -r requirements.txt && python setup.py install
-	
-	#cd $(DESTDIR) && pip install -r requirements.txt && \
-	python setup.py install 
+	cd $(NETWORKDIR) && pip install -r requirements.txt && python setup.py install
+	cd $(DESTDIR) && pip install -r requirements.txt 
 
 start:  
 	@echo "starting the service..."

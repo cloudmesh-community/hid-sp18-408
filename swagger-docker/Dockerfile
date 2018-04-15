@@ -6,6 +6,8 @@ RUN apt-get update -q && apt-get install -qy \
     python-dev \
     python-pip \
     git-core \
+    wget \
+    default-jre \
     libssl-dev -y
 
 # install net tools
