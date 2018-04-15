@@ -35,7 +35,7 @@ def get_network():
 	ipconfig_cmd = os.popen("ifconfig").read()
 	b = ipconfig_cmd.split("\n\n")
 
-	a["Type"] = re.search("Link encap:(\w+)", b[-2]).group(1)
+	#a["Type"] = re.search("Link encap:(\w+)", b[-2]).group(1)
 
 
 	return a

@@ -12,7 +12,7 @@ docker-all: docker-build docker-start
 
 docker-build:
 	@echo "building the image from docker file..."
-	docker build --no-cache -t manjoshi/cloudmesh-network .
+	docker build -t manjoshi/cloudmesh-network .
 	@echo "image DONE"
 
 docker-pull:
@@ -56,7 +56,7 @@ service: dest
 	cp base_model_.py $(DESTDIR)/swagger_server/models
 
 	#cd $(NETWORKDIR) && pip install -r requirements.txt && python setup.py install
-	cd $(DESTDIR) && pip install -r requirements.txt && \
+	cd $(DESTDIR) && pip install -r requirements.txt && ls && pwd \
 	python setup.py install
 
 start:  
