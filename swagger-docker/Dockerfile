@@ -8,8 +8,9 @@ RUN apt-get update -q && apt-get install -qy \
     python-pip \
     git-core \
     wget \
+    #software-properties-common \
     curl \
-    emacs \
+    #emacs \
     default-jre \
     libssl-dev -y
 
