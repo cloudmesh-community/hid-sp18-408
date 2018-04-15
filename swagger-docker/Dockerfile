@@ -8,7 +8,8 @@ RUN apt-get update -q && apt-get install -qy \
     python-pip \
     git-core \
     wget \
-    pandoc \
+    curl \
+    emacs \
     default-jre \
     libssl-dev -y
 
