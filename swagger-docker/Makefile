@@ -12,7 +12,7 @@ docker-all: docker-build docker-start
 
 docker-build:
 	@echo "building the image from docker file..."
-	docker build -t manjoshi/cloudmesh-network .
+	docker build --no-cache -t manjoshi/cloudmesh-network .
 	@echo "image DONE"
 
 docker-pull:
