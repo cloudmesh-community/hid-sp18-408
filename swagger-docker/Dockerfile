@@ -23,6 +23,6 @@ RUN wget http://central.maven.org/maven2/io/swagger/swagger-codegen-cli/2.3.1/sw
 
 EXPOSE 8080
 
-#RUN make service
+RUN make service
 
 CMD ["make", "start"]

@@ -55,8 +55,8 @@ service: dest
 	cp network.py $(DESTDIR)/swagger_server/models
 	cp base_model_.py $(DESTDIR)/swagger_server/models
 
-	cd $(NETWORKDIR) && pip install -r requirements.txt && python setup.py install
-	cd $(DESTDIR) && pip install -r requirements.txt 
+	#cd $(NETWORKDIR) && pip install -r requirements.txt && python setup.py install
+	cd $(DESTDIR) && pip install -r requirements.txt && \
 	python setup.py install
 
 start:  
