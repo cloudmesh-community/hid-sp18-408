@@ -2,8 +2,7 @@
 
 
 ## Acknowlegement: 
-I referred to the git repo owned by Pathan, Shagufta (hid-sp18-516), modified
-and created my own Make file for this assignment
+The github repo of Pathan, Shagufta (hid-sp18-516) was refered while implementing this service on docker.
  
 
 ## Implementation :
@@ -15,7 +14,13 @@ and created my own Make file for this assignment
 ## Execution steps
 This is the directory for reproducable Reset Service with Swagger. 
 
-* The reproducibility can be achieved by using the Make file, one could either use it with docker container:
+* clone the repository
+
+* navigate to the directory 
+
+        cd /hid-sp18-408/swagger/swagger-docker
+
+* Using Docker to run the network service:
 
 	- make docker-all -- creates the docker image, start the container running the service
 
@@ -29,8 +34,10 @@ This is the directory for reproducable Reset Service with Swagger.
 
 	- make docker-clean -- stop the container and remove the image
 
+* Test the service:
+	- make docker test -- curl for network details
 
-* The yaml file I used is in 
+* The yaml file is at 
 
         hid-sp18-405/swagger/swagger-docker/network.yaml
     
@@ -49,21 +56,3 @@ The Rest service gives the network information of the system.
 To display the name of the network interface, IP, Gateway, MAC address, Subnet Mask, 
 Broadcast, MTU of the network interface, netifaces library is used.
 
-## Start The Service
-
-* clone the repository
-* navigate to the directory 
-
-        cd /hid-sp18-408/swagger/swagger-docker
-        
-* creates the swagger service from the yaml file with correct controllers
-        
-        make service
-        
-* start the service by execute:
-
-        make start
-
-* The following will show
-
-        Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
