@@ -54,5 +54,5 @@ This is the directory for reproducable Reset Service with Swagger.
 
 The Rest service gives the network information of the system.
 To display the name of the network interface, IP, Gateway, MAC address, Subnet Mask, 
-Broadcast, MTU of the network interface, netifaces library is used.
+Broadcast and MTU of the network interface, netifaces library is used.
 
