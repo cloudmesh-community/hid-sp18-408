@@ -29,4 +29,41 @@ This is the directory for reproducable Reset Service with Swagger.
 
 	- make docker-clean -- stop the container and remove the image
 
+
+* The yaml file I used is in 
+
+        hid-sp18-405/swagger/swagger-docker/network.yaml
+    
+* The default_controller is at 
+
+        hid-sp18-405/swagger/swagger-docker/default_controller.py
+    
+* To install these modules alone, please cd to the above directory and run:
+		
+		pip install -r requirements.txt
+ 		python setup.py install
   
+## Service Descprition
+
+The Rest service gives the network information of the system.
+To display the name of the network interface, IP, Gateway, MAC address, Subnet Mask, 
+Broadcast, MTU of the network interface, netifaces library is used.
+
+## Start The Service
+
+* clone the repository
+* navigate to the directory 
+
+        cd /hid-sp18-408/swagger/swagger-docker
+        
+* creates the swagger service from the yaml file with correct controllers
+        
+        make service
+        
+* start the service by execute:
+
+        make start
+
+* The following will show
+
+        Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
