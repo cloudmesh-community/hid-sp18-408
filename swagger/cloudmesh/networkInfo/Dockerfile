@@ -17,7 +17,7 @@ RUN pip install netifaces
 RUN git clone https://github.com/cloudmesh-community/hid-sp18-408.git
 RUN apt-get install net-tools
 
-WORKDIR /hid-sp18-408/swagger-docker
+WORKDIR /hid-sp18-408/swagger/cloudmesh/networkInfo
 
 RUN wget http://central.maven.org/maven2/io/swagger/swagger-codegen-cli/2.3.1/swagger-codegen-cli-2.3.1.jar
 

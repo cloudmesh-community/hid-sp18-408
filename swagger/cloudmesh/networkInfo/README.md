@@ -18,7 +18,7 @@ This is the directory for reproducable Reset Service with Swagger.
 
 * navigate to the directory 
 
-        cd /hid-sp18-408/swagger/swagger-docker
+        cd /hid-sp18-408/swagger/cloudmesh/networkInfo
 
 * Using Docker to run the network service:
 
